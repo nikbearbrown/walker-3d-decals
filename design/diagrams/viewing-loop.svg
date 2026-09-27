@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="600" viewBox="0 0 1400 600" role="img" aria-labelledby="t d">
+<title id="t">Recovered viewing loop + the one verb · M-01..M-04</title>
+<desc id="d">Viewing loop through tester.gd with the P-key placement branch. IDs: M-01, M-02, M-03, M-04, F-07.</desc>
+<rect width="1400" height="600" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d24e42"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="40" y="50" font-size="28" font-weight="700">Recovered viewing loop + the one verb · M-01..M-04</text>
+<text x="40" y="78" font-size="15" fill="#5b6b7c">Browse specimens, frame, set filter; or press P to stamp a decal where the cursor ray lands. Solid = in code; dashed = proposed/unverified.</text>
+<g font-size="13" fill="#5b6b7c"><line x1="1070" y1="572" x2="1110" y2="572" stroke="#25354a" stroke-width="2.5"/><text x="1118" y="576">observed in code</text><line x1="1230" y1="572" x2="1270" y2="572" stroke="#d24e42" stroke-width="2.5" stroke-dasharray="8 6"/><text x="1278" y="576">proposed / missing</text></g>
+<path d="M320 210 L430 210" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M690 210 L800 210" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M829 165 Q570 60 311 165" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="570" y="104" font-size="13" fill="#5b6b7c" text-anchor="middle" stroke="#faf9f5" stroke-width="4" paint-order="stroke">repeat · no end state</text>
+<path d="M560 255 L560 360" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M680 400 L800 400" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="740" y="392" font-size="13" fill="#5b6b7c" text-anchor="middle" stroke="#faf9f5" stroke-width="4" paint-order="stroke">on hit</text>
+<path d="M1049 445 L1158 490" fill="none" stroke="#d24e42" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#p)"/>
+<text x="1103" y="460" font-size="13" fill="#d24e42" text-anchor="middle" stroke="#faf9f5" stroke-width="4" paint-order="stroke">tint? projection?</text>
+<rect x="80" y="165" width="240" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="200" y="207" font-size="18" font-weight="700" text-anchor="middle" fill="#25354a">Select specimen</text>
+<text x="200" y="227" font-size="12.5" text-anchor="middle" fill="#5b6b7c">ui_left / ui_right · « »</text>
+<text x="200" y="242" font-size="12.5" text-anchor="middle" fill="#5b6b7c">index 0..9</text>
+<rect x="430" y="165" width="260" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="560" y="207" font-size="18" font-weight="700" text-anchor="middle" fill="#25354a">Frame it</text>
+<text x="560" y="227" font-size="12.5" text-anchor="middle" fill="#5b6b7c">drag = orbit (pitch −90°..0)</text>
+<text x="560" y="242" font-size="12.5" text-anchor="middle" fill="#5b6b7c">wheel = zoom 1.5..4</text>
+<rect x="800" y="165" width="280" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="940" y="207" font-size="18" font-weight="700" text-anchor="middle" fill="#25354a">Filter mode</text>
+<text x="940" y="227" font-size="12.5" text-anchor="middle" fill="#5b6b7c">6 options →</text>
+<text x="940" y="242" font-size="12.5" text-anchor="middle" fill="#5b6b7c">RenderingServer.decals_set_filter</text>
+<rect x="440" y="360" width="240" height="80" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="560" y="397" font-size="18" font-weight="700" text-anchor="middle" fill="#25354a">Press P</text>
+<text x="560" y="417" font-size="12.5" text-anchor="middle" fill="#5b6b7c">ray camera→cursor, 100 u</text>
+<rect x="800" y="355" width="280" height="90" rx="12" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="940" y="397" font-size="18" font-weight="700" text-anchor="middle" fill="#25354a">Stamp decal.tscn</text>
+<text x="940" y="417" font-size="12.5" text-anchor="middle" fill="#5b6b7c">at hit · faces camera</text>
+<text x="940" y="432" font-size="12.5" text-anchor="middle" fill="#5b6b7c">grow 0.2 s · fade · free at 5 s</text>
+<rect x="1110" y="490" width="240" height="60" rx="12" fill="#fffdf7" stroke="#d24e42" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="1230" y="517" font-size="18" font-weight="700" text-anchor="middle" fill="#d24e42">Forward+ capture</text>
+<text x="1230" y="537" font-size="12.5" text-anchor="middle" fill="#5b6b7c">not captured</text>
+<text x="40" y="576" font-size="13" fill="#5b6b7c">Source: godot/tester.gd:25-89 · test.tscn:739-771 · project.godot:30-34</text>
+</g></svg>

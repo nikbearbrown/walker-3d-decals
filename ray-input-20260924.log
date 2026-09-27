@@ -1,0 +1,31 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS navigation 0
+PASS navigation 1
+PASS navigation 2
+PASS navigation 3
+PASS navigation 4
+PASS navigation 5
+PASS navigation 6
+PASS navigation 7
+PASS navigation 8
+PASS navigation 9
+PASS last navigation clamped
+PASS first navigation clamped
+PASS drag rotates camera
+PASS zoom limit 5
+PASS zoom limit 4
+PASS filter input selection 0
+PASS filter input selection 1
+PASS filter input selection 2
+PASS filter input selection 3
+PASS filter input selection 4
+PASS filter input selection 5
+RAY pointer=(576.0, 432.0) camera=(1.333773, 0.781099, 11.54757)
+RAY hit={ "position": (0.382594, 0.0, 11.40381), "normal": (0.0, 1.0, 0.0), "face_index": -1, "collider_id": 31876711885, "collider": StaticBody3d:<StaticBody3D#31876711885>, "shape": 0, "rid": RID(227633266688) }
+PASS P-key ray places decal
+OBSERVED decal size (2.0, 2.0, 2.0)
+PASS decal growth animation affects size
+PASS decal fades over time
+PASS decal expires after five seconds
+RESULT failures=0; headless state, not GPU appearance

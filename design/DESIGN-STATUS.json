@@ -1,0 +1,52 @@
+{
+  "game": "walker-3d-decals",
+  "mode": "recovered",
+  "revision": 1,
+  "design_version": "0.1.0-recovered",
+  "date": "2026-09-27",
+  "recovered_from": {
+    "path": "godot/",
+    "engine_detected": "Godot 4.7.2.stable (logs 2026-09-24)",
+    "pass": "/gdd reverse --path godot silent",
+    "git": "not read (no git commands run in this pass)"
+  },
+  "engine": {
+    "name": "godot",
+    "version": "4.7.2.stable",
+    "renderer": "forward_plus (default; not set in project.godot)"
+  },
+  "project_kind": "tech demo",
+  "gates": {
+    "vision": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "systems": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "world": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    },
+    "scope": {
+      "signed_by": null,
+      "date": null,
+      "revision": null
+    }
+  },
+  "core_percentage": {
+    "core": null,
+    "total": 8,
+    "percent": null,
+    "over_limit": null,
+    "decision": "undetermined \u2014 nothing tagged CORE (Q-06)"
+  },
+  "missing_count": 7,
+  "edu_track": false,
+  "human_playtests": 0,
+  "notes": "Recovered in silent mode; gate \u2014 unsigned at time of writing. Describes what exists in godot/; approves none of it. Gates are signed by humans only."
+}

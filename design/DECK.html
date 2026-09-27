@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Decals GDD deck</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#faf9f5;--ink:#25354a;--muted:#5b6b7c;--teal:#287c68;--red:#d24e42;--card:#fffdf7;--rule:#daddd6}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Helvetica,Arial,sans-serif}
+.slide{display:none;min-height:100vh;box-sizing:border-box;padding:56px 72px;max-width:1400px;margin:0 auto}
+.slide.on{display:block}
+h1{font-size:44px;margin:0 0 8px}h2{font-size:34px;margin:0 0 14px}
+.kicker{color:var(--muted);font-size:16px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:18px}
+p,li{font-size:22px;line-height:1.4}li{margin:8px 0}
+.cap{color:var(--muted);font-size:15px;margin-top:6px}
+img,object{max-width:100%;border:1px solid var(--rule);background:#fff}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:14px;font-weight:700;margin-right:6px}
+.obs{background:#e3f1ec;color:var(--teal)}.inf{background:#eef1f4;color:var(--muted)}.mis{background:#fdece9;color:var(--red)}
+.dashed{border:2px dashed var(--red);padding:10px 16px;border-radius:8px}
+.solid{border:2px solid var(--ink);padding:10px 16px;border-radius:8px}
+table{border-collapse:collapse;font-size:18px;width:100%}td,th{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+.tw{overflow-x:auto}
+.big{font-size:96px;font-weight:700;color:var(--teal);line-height:1}
+.zelda{border-left:6px solid var(--red);padding-left:18px}
+nav{position:fixed;bottom:14px;right:22px;color:var(--muted);font-size:14px}
+a{color:var(--teal)}
+@media(max-width:800px){.slide{padding:24px 16px}h1{font-size:30px}h2{font-size:24px}p,li{font-size:17px}.big{font-size:56px}}
+</style></head><body>
+<!-- walker-3d-decals recovered GDD deck · /gdd reverse --path godot silent · gate — unsigned at time of writing -->
+<section class="slide on">
+<div class="kicker">walker-3d-decals · recovered GDD 0.1.0 · 2026-09-27 · Zelda, silent</div>
+<h1>Ten decals and a P key.</h1>
+<p>A gallery of Godot decals — stains, paint, puddles, blob shadows, sci-fi panels, fades — and one verb: press P to stamp a decal where your cursor points.</p>
+<p><span class="tag obs">OBSERVED</span> &nbsp; <span class="tag inf">INFERRED</span> &nbsp; <span class="tag mis">MISSING</span></p>
+<p class="cap">Tech demo, not a game. gate — unsigned at time of writing. → <a href="GDD.md">GDD.md</a></p>
+</section>
+<section class="slide">
+<div class="kicker">What exists · §1</div>
+<h2>Upstream's screenshot</h2>
+<img src="../godot/screenshots/decals.png" alt="Upstream decals demo screenshot" style="max-height:62vh">
+<p class="cap"><span class="tag obs">OBSERVED</span> godot/screenshots/decals.png — shipped with the Godot demo, not a Walker capture. Forward+ appearance is unverified.</p>
+</section>
+<section class="slide">
+<div class="kicker">Loop · §3</div>
+<h2>Browse, or stamp</h2>
+<img src="diagrams/viewing-loop.svg" alt="Viewing loop"><p class="cap">diagrams/viewing-loop.svg</p>
+</section>
+<section class="slide">
+<div class="kicker">Mechanics · §5 M-04 M-05</div>
+<h2>The stamp lives five seconds</h2>
+<img src="diagrams/stamp-lifecycle.svg" alt="Stamp lifecycle"><p class="cap">The red tint set in code is probably overwritten by the fade track <span class="tag inf">INFERRED</span> — nobody has looked.</p>
+</section>
+<section class="slide">
+<div class="kicker">Evidence · §16</div>
+<h2>25 checks, and where they stop</h2>
+<div class="big">25 / 25</div><p>Navigation, clamps, drag, zoom, all six filter selections, a real ray hit on the floor, grow/fade/free. <span class="tag obs">OBSERVED ray-input-20260924.log</span></p>
+<p class="zelda">"A holder was created" is not "a decal is visible where you clicked." Filter signals fire; filtering pixels are unseen.</p>
+</section>
+<section class="slide">
+<div class="kicker">Risks · §14</div>
+<h2>Top 3 risks</h2>
+<ol><li><b>R-05</b> the recording blocker holds both films.</li><li><b>R-01</b> CC-BY and CC-BY-SA textures on a published film without the credits.</li>
+<li><b>R-02</b> the filter picker shows index 4 while the project default is 5.</li></ol>
+</section>
+<section class="slide">
+<div class="kicker">Open questions · decisions.md</div>
+<h2>7 open, 0 decided</h2>
+<div class="big">7</div><p>Q-01 film purpose · Q-02 pillars · Q-03 order · Q-04 stamp tint · Q-05 startup filter · Q-06 CORE · Q-07 licence review</p><p class="cap">→ <a href="decisions.md">decisions.md</a></p>
+</section>
+<section class="slide">
+<div class="kicker">Zelda's notes</div>
+<h2>First fix</h2>
+<p class="zelda">Q-07 before anything is published. Then Q-03: this is the only demo in the batch with a game verb — if the films are for game makers, the P key is the film.</p>
+<p class="cap">→ <a href="GDD.md">GDD.md § Zelda's notes</a> · <a href="IMPLEMENTATION-MAP.md">IMPLEMENTATION-MAP.md</a></p>
+</section>
+<nav id="n"></nav>
+
+<script>
+const s=[...document.querySelectorAll('.slide')];let i=0;const n=document.getElementById('n');
+function go(k){s[i].classList.remove('on');i=Math.max(0,Math.min(s.length-1,k));s[i].classList.add('on');n.textContent=(i+1)+' / '+s.length;}
+document.addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1)});
+document.addEventListener('click',e=>{if(e.target.closest('a'))return;go(e.clientX>innerWidth/2?i+1:i-1)});
+go(0);
+</script>
+
+</body></html>
